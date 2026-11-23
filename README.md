@@ -8,7 +8,7 @@ Computer, laptop, MacBook, desktop and printer repair services in Kharghar, Navi
 - **Phone:** +91 77919 15821
 - **WhatsApp:** +91 77919 15821
 - **Email:** rktechsolutions.org@gmail.com
-- **Hours:** Daily, 8:00 AM – 10:00 PM
+- **Hours:** Daily, 9:00 AM – 10:00 PM
 
 ## Services
 - Laptop and desktop repair
