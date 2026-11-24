@@ -14,9 +14,9 @@ export function getReply(message, language = "both") {
 
 export function createLead(input = {}) {
   const name = String(input.name || "").trim();
-  const phone = String(input.phone || "").replace(/\\D/g, "");
+  const phone = String(input.phone || "").replace(/\D/g, "");
   const issue = String(input.issue || "").trim();
-  if (name.length < 2 || !/^\\d{10}$/.test(phone) || issue.length < 3) return { ok: false, error: "Name, valid 10-digit phone and issue are required." };
+  if (name.length < 2 || !/^[0-9]{10}$/.test(phone) || issue.length < 3) return { ok: false, error: "Name, valid 10-digit phone and issue are required." };
   return { ok: true, lead: { name, phone, issue, createdAt: new Date().toISOString(), status: "New" } };
 }
 
