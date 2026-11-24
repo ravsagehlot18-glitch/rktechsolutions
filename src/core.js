@@ -4,7 +4,7 @@ export function getReply(message, language = "both") {
   const en = language === "english";
   const answer = (h, e) => hi ? h : en ? e : h + "\n\n" + e;
   if (/price|cost|rate|कीमत|रेट|कितना/.test(q)) return answer("कृपया डिवाइस का मॉडल और समस्या बताएं। जांच के बाद सही कीमत बताई जाएगी।", "Please share the device model and issue. We’ll confirm the price after diagnosis.");
-  if (/repair|रिपेयर|खराब|काम नहीं|not working|issue/.test(q)) return answer("हम Laptop, Desktop, MacBook, Printer और Motherboard की जांच/रिपेयर करते हैं। कृपया मॉडल, समस्या और अपना नाम/फोन साझा करें।", "We diagnose and repair laptops, desktops, MacBooks, printers and motherboards. Please share the model, issue, name and phone number.");
+  if (/repair|रिपेयर|खराब|काम नहीं|not working|issue/.test(q)) return answer("हम लैपटॉप (Laptop), डेस्कटॉप (Desktop), MacBook, Printer और Motherboard की जांच/रिपेयर करते हैं। कृपया मॉडल, समस्या और अपना नाम/फोन साझा करें।", "We diagnose and repair laptops, desktops, MacBooks, printers and motherboards. Please share the model, issue, name and phone number.");
   if (/ssd|ram|upgrade|एसएसडी|रैम/.test(q)) return answer("RAM और SSD upgrade उपलब्ध हैं। डिवाइस मॉडल और मौजूदा configuration भेजें।", "RAM and SSD upgrades are available. Send your device model and current configuration.");
   if (/address|location|पता|कहाँ|kharghar/.test(q)) return answer("पता: Shop No. 8, Medical Health Care Center, Plot No. 19C, Sector 20, Kharghar, Navi Mumbai, Maharashtra 410210.", "Address: Shop No. 8, Medical Health Care Center, Plot No. 19C, Sector 20, Kharghar, Navi Mumbai, Maharashtra 410210.");
   if (/time|hours|open|समय|कब खुल/.test(q)) return answer("दुकान रोज़ सुबह 8:00 बजे से रात 10:00 बजे तक खुली रहती है।", "We are open daily from 8:00 AM to 10:00 PM.");
